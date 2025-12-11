@@ -243,7 +243,7 @@ class AfmoeAttention(nn.Module):
                 self.head_dim,
                 rotary_dim=self.head_dim,
                 max_position=max_position_embeddings,
-                rope_parameters=config["rope_parameters"],
+                rope_parameters=config.rope_parameters,
                 is_neox_style=True,
             )
         else:
